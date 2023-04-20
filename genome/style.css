@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: #E0E0E0;
+
+}
+
+.navbar ul{
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    width: 36%;
+    align-items: center;
+    padding: 5 5%;
+    overflow: hidden;
+    background-image: url("images/tache1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    color: #FFF;
+    
+}
+
+.cols{
+    
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.planding p{
+    color: #FFF;
+}
+h1{
+    display: block;
+    font-size: 4em;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.multiText{
+    text-transform: capitalize;
+}
+
+p{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+    left: 0px;
+}
+
+button{
+    border-radius: 1rem;
+    line: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 400;
+    color: #53AEA1;
+    background-color: #FFF;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.flex-parent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing{
+    width: 55%;
+}
+
+strong{
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.programmes{
+    margin-top: 130px;
+    text-align: center
+    
+}
+
+@gray-darker:               #444444;
+@gray-dark:                 #696969;
+@gray:                      #999999;
+@gray-light:                #cccccc;
+@gray-lighter:              #ececec;
+@gray-lightest:             lighten(@gray-lighter,4%);
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: #53AEA1;
+  border: 1px solid #53AEA1;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.titreprogrammes{
+    margin-bottom: 50px;
+}
+ 
+.cards {
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 10px;
+  padding: 0;
+  justify-content: center;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 300px;
+    height: 500px;
+  }
+  @media(min-width: 106rem) {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-top-left-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 80px 80px;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+	  display: block;
+    padding-top: 56.25%; 
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; 
+    }
+  }
+}
+
+.card__image--river {
+  background-image: url("images/nutripill.png");
+}
+
+.card__image--fence {
+  background-image: url("images/dopanome.png");
+}
+
+.card__title {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+  text-align: center; 
+}
+
+
+.backimg {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/tache2.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.avenir{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3{
+    color: #53AEA1;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+.bulles {
+    max-width: 40%; 
+    margin: 40px;
+}
+
+.Victor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: 100vh;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+
+.testimonial {
+	background-color: #fff;
+	border-radius: 20px;
+  	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	overflow: hidden;
+	max-width: 100%;
+	width: 400px;
+}
+
+.testimonial-body {
+	padding: 40px 40px 80px;
+}
+
+.testimonial-body p {
+	color: #555;
+	font-size: 20px;
+	line-height: 36px;
+	margin: 0;
+}
+
+.testimonial-body .fa-quote-right {
+	color: #eee;
+	font-size: 40px;
+	float: right;
+}
+
+.testimonial-footer {
+	background-color: #53AEA1;
+	color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+
+.testimonial-footer img {
+	border-radius: 50%;
+	border: 5px solid #fff;
+	height: 100px;
+	width: 100px;
+	margin-top: -100px;
+}
+
+.testimonial-footer h3 {
+	margin: 10px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+    color: #FFF;
+}
+
+.testimonial-footer h4 {
+	color: #FFF;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.pays{
+    height: 250px;
+    background-image: url("images/dégradé.png");
+    background-size: 100%;
+    margin-bottom: 100px;
+}
+
+.pays h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.pays h3{
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.boutns{
+    justify-content: center;
+    position: relative;
+    left: 570px;
+}
+
+.container {
+    display: flex;
+    background-color: #737272;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.gauche p {
+    color: #FFF;
+    margin-top: 30px;
+}
+
+.droite {
+    margin-right: 100px;
+}
+
+.droite ul li a {
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.droite ul li  {
+    margin-top: 15px;
+}
+
+.droite ul li a:hover{
+    color: #53AEA1;
+}
+

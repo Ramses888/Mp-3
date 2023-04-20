@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: #E0E0E0;
+
+}
+
+.navbar ul{
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: center;
+}
+
+
+
+.Dope{
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    height: 600px;
+    width: 60%;
+}
+
+.Dope h1{
+    margin-bottom: 25px;;
+    font-weight: 250;
+}
+
+.Dope h3{
+    margin-bottom: 25px;
+    color: #53AEA1;
+    font-weight: 100;
+}
+
+.Dope h4{
+    margin-bottom: 25px;;
+    font-weight: 100;
+    font-size: 10;
+}
+
+
+
+.container {
+    display: flex;
+    background-color: #737272;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.gauche p {
+    color: #FFF;
+    margin-top: 30px;
+}
+
+.droite {
+    margin-right: 100px;
+}
+
+.droite ul li a {
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.droite ul li  {
+    margin-top: 15px;
+}
+
+.droite ul li a:hover{
+    color: #53AEA1;
+}
+
+.textee{
+    display: flex;
+    justify-content: space-between; 
+    background-image: url("images/etats.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
